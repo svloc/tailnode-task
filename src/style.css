@@ -1,3 +1,137 @@
-h1, p {
-  font-family: Lato;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+*,
+*::before,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #21517c;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: #f6faff;
+  font-family: "Lato", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.sidebar {
+  width: 15%;
+}
+
+.nav {
+  box-shadow: rgb(0 0 0 / 15%) 2.4px 2.4px 3.2px;
+  width: 200px;
+  padding: 1em;
+  font-size: 1rem;
+  height: 99vh;
+  background: #fff;
+}
+.nav-ul {
+  list-style: none;
+}
+.nav-li {
+  padding: 0.45em;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.nav-li:hover,
+.active {
+  background-color: #cfdcec;
+  border-radius: 0.25rem;
+}
+.active {
+  font-weight: 700;
+}
+.add-todo {
+  width: 85%;
+  padding: 2rem;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-todo {
+  box-shadow: rgb(0 0 0 / 25%) 0px 0.0625em 0.0625em,
+    rgb(0 0 0 / 25%) 0px 0.125em 0.5em,
+    rgb(255 255 255 / 10%) 0px 0px 0px 1px inset;
+  width: 400px;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.25rem;
+}
+.form-input {
+  border-radius: 2px;
+  padding: 0.45em 1em;
+  margin-bottom: 1em;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 0.012rem rgb(85 5 127) !important;
+  transition: all 0.2s ease-out;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+}
+.form-input:focus-visible,
+.form-input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.12rem rgb(85 5 127) !important;
+}
+input:-internal-autofill-selected {
+  background-color: #fff !important;
+}
+
+.btn {
+  padding: 0.5rem 1em;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #52057f;
+  font-family: "Lato", sans-serif;
+}
+.btn-sm{
+  padding: 0.35rem 1rem !important;
+}
+.btn-black {
+  border: 1px solid #424242;
+  color: #fff;
+  background-color: #424242;
+}
+.btn-black:hover {
+  border: 1px solid #424242;
+  background-color: #fff;
+  color: #000;
+}
+.btn-black:focus {
+  box-shadow: 0 0 0 0.12rem #424242 !important;
+}
+.f-right {
+  float: right;
+}
+
+.current-todo,
+.completed-todo {
+  width: 85%;
+  padding: 2rem;
+  margin-top: 0.5rem;
+}
+
+table {
+  font-family: "Lato", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th {
+  padding: 8px;
+  background: #424242;
+  border: 1px solid #fff;
+  color: #fff;
+}
+table td {
+  border: 1px solid #cfdcec;
+  padding: 3px 15px;
 }
