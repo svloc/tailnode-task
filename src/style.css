@@ -35,7 +35,7 @@ body {
 .nav-ul {
   list-style: none;
 }
-.nav-li {
+.nav-li,.nav-btn {
   padding: 0.45em;
   margin-bottom: 0.5rem;
   cursor: pointer;
